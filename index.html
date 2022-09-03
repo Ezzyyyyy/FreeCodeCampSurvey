@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <h1 id="title">FreeCodeCamp Survey</h1>
+  <p id="description">This is a survey I made to get the certification from freeCodeCamp.org</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name<input type="text" id="name" required placeholder="Enter your name"></label>
+      <label id="email-label">Email<input type="email" id="email" required placeholder="Enter your Email"></label>
+      <label id="number-label">Age<input type="number" id="number" min="13" max="120" required placeholder="Age"></label>
+      
+    <fieldset id="recommendation">
+      <h3>Would you recommend us?</h3>
+      <label><input type="radio" name="recommendation-type" class="inline" checked="checked" value="yes"> Definitely</label>
+      <label><input type="radio" name="recommendation-type" class="inline" value="maybe"> Maybe</label>
+      <label><input type="radio" name="recommendation-type" class="inline" value="no"> Not Sure</label>
+    </fieldset>
+
+    <fieldset id="feature">
+      <h3>What is your favourite feature of freeCodeCamp
+    <label>
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Challenges</option>
+        <option value="2">Open Source</option>
+        <option value="3">Forum Help</option>
+        <option value="4">Certificates!</option>
+        </select>
+    </fieldset>
+
+    <fieldset id="improved">
+      <h3>Tell us what we can improve (Check all that apply)</h3>
+      <label><input type="checkbox" name="improvements" class="inline" value="filler"> Filler text
+      <label><input type="checkbox" name="improvements" class="inline" value="filler"> Filler text
+      <label><input type="checkbox" name="improvements" class="inline" value="filler"> Filler text
+      <label><input type="checkbox" name="improvements" class="inline" value="filler"> Filler text
+      </label>
+    </fieldset>
+
+    <fieldset id="message">
+      <label>Send me a message! <textarea name="message" rows="3" cols="30" placeholder="Send me a message!"></textarea>
+      </label>
+    </fieldset>
+
+    <input type="submit" value="Submit" id="submit">
+  </form>
+</body>
+</html>
